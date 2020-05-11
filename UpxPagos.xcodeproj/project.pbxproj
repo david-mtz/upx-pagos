@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		638E9104246A0D03009A1C7E /* UpxPagos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638E90FA246A0D02009A1C7E /* UpxPagos.framework */; };
+		638E9109246A0D03009A1C7E /* UpxPagosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9108246A0D03009A1C7E /* UpxPagosTests.swift */; };
+		638E910B246A0D03009A1C7E /* UpxPagos.h in Headers */ = {isa = PBXBuildFile; fileRef = 638E90FD246A0D02009A1C7E /* UpxPagos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638E911B246A0D31009A1C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E911A246A0D31009A1C7E /* AppDelegate.swift */; };
+		638E9124246A0D33009A1C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638E9123246A0D33009A1C7E /* Assets.xcassets */; };
+		638E9127246A0D33009A1C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638E9125246A0D33009A1C7E /* LaunchScreen.storyboard */; };
+		638E912F246A0E2E009A1C7E /* UpxPagos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E912E246A0E2E009A1C7E /* UpxPagos.swift */; };
+		638E9137246A0EC4009A1C7E /* InicioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9131246A0EC4009A1C7E /* InicioPresenter.swift */; };
+		638E9138246A0EC4009A1C7E /* InicioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9132246A0EC4009A1C7E /* InicioRouter.swift */; };
+		638E9139246A0EC4009A1C7E /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9133246A0EC4009A1C7E /* InicioViewController.swift */; };
+		638E913A246A0EC4009A1C7E /* InicioProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9134246A0EC4009A1C7E /* InicioProtocols.swift */; };
+		638E913B246A0EC4009A1C7E /* InicioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9135246A0EC4009A1C7E /* InicioInteractor.swift */; };
+		638E913C246A0EC4009A1C7E /* InicioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638E9136246A0EC4009A1C7E /* InicioViewController.xib */; };
+		638E913F246A0F2F009A1C7E /* UIViewController+navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E913E246A0F2F009A1C7E /* UIViewController+navigation.swift */; };
+		638E9141246A0F65009A1C7E /* SDKConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9140246A0F65009A1C7E /* SDKConfiguration.swift */; };
+		638E9143246A1003009A1C7E /* UpxPagos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638E90FA246A0D02009A1C7E /* UpxPagos.framework */; };
+		638E9144246A1003009A1C7E /* UpxPagos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 638E90FA246A0D02009A1C7E /* UpxPagos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		638E9149246A12D7009A1C7E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638E9148246A12D7009A1C7E /* TestViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		638E9105246A0D03009A1C7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 638E90F1246A0D02009A1C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638E90F9246A0D02009A1C7E;
+			remoteInfo = UpxPagos;
+		};
+		638E9145246A1003009A1C7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 638E90F1246A0D02009A1C7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638E90F9246A0D02009A1C7E;
+			remoteInfo = UpxPagos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		638E9147246A1003009A1C7E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				638E9144246A1003009A1C7E /* UpxPagos.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		638E90FA246A0D02009A1C7E /* UpxPagos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UpxPagos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		638E90FD246A0D02009A1C7E /* UpxPagos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpxPagos.h; sourceTree = "<group>"; };
+		638E90FE246A0D02009A1C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638E9103246A0D03009A1C7E /* UpxPagosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpxPagosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		638E9108246A0D03009A1C7E /* UpxPagosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpxPagosTests.swift; sourceTree = "<group>"; };
+		638E910A246A0D03009A1C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638E9118246A0D31009A1C7E /* UpxPagosDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpxPagosDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		638E911A246A0D31009A1C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		638E9123246A0D33009A1C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		638E9126246A0D33009A1C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		638E9128246A0D33009A1C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638E912E246A0E2E009A1C7E /* UpxPagos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpxPagos.swift; sourceTree = "<group>"; };
+		638E9131246A0EC4009A1C7E /* InicioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioPresenter.swift; sourceTree = "<group>"; };
+		638E9132246A0EC4009A1C7E /* InicioRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioRouter.swift; sourceTree = "<group>"; };
+		638E9133246A0EC4009A1C7E /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		638E9134246A0EC4009A1C7E /* InicioProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioProtocols.swift; sourceTree = "<group>"; };
+		638E9135246A0EC4009A1C7E /* InicioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioInteractor.swift; sourceTree = "<group>"; };
+		638E9136246A0EC4009A1C7E /* InicioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioViewController.xib; sourceTree = "<group>"; };
+		638E913E246A0F2F009A1C7E /* UIViewController+navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+navigation.swift"; sourceTree = "<group>"; };
+		638E9140246A0F65009A1C7E /* SDKConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKConfiguration.swift; sourceTree = "<group>"; };
+		638E9148246A12D7009A1C7E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		638E90F7246A0D02009A1C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638E9100246A0D03009A1C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E9104246A0D03009A1C7E /* UpxPagos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638E9115246A0D31009A1C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E9143246A1003009A1C7E /* UpxPagos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		638E90F0246A0D02009A1C7E = {
+			isa = PBXGroup;
+			children = (
+				638E90FC246A0D02009A1C7E /* UpxPagos */,
+				638E9107246A0D03009A1C7E /* UpxPagosTests */,
+				638E9119246A0D31009A1C7E /* UpxPagosDemo */,
+				638E90FB246A0D02009A1C7E /* Products */,
+				638E9142246A1003009A1C7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		638E90FB246A0D02009A1C7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				638E90FA246A0D02009A1C7E /* UpxPagos.framework */,
+				638E9103246A0D03009A1C7E /* UpxPagosTests.xctest */,
+				638E9118246A0D31009A1C7E /* UpxPagosDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		638E90FC246A0D02009A1C7E /* UpxPagos */ = {
+			isa = PBXGroup;
+			children = (
+				638E913D246A0F1E009A1C7E /* Base */,
+				638E9130246A0E79009A1C7E /* Module */,
+				638E90FD246A0D02009A1C7E /* UpxPagos.h */,
+				638E90FE246A0D02009A1C7E /* Info.plist */,
+				638E912E246A0E2E009A1C7E /* UpxPagos.swift */,
+				638E9140246A0F65009A1C7E /* SDKConfiguration.swift */,
+			);
+			path = UpxPagos;
+			sourceTree = "<group>";
+		};
+		638E9107246A0D03009A1C7E /* UpxPagosTests */ = {
+			isa = PBXGroup;
+			children = (
+				638E9108246A0D03009A1C7E /* UpxPagosTests.swift */,
+				638E910A246A0D03009A1C7E /* Info.plist */,
+			);
+			path = UpxPagosTests;
+			sourceTree = "<group>";
+		};
+		638E9119246A0D31009A1C7E /* UpxPagosDemo */ = {
+			isa = PBXGroup;
+			children = (
+				638E911A246A0D31009A1C7E /* AppDelegate.swift */,
+				638E9123246A0D33009A1C7E /* Assets.xcassets */,
+				638E9125246A0D33009A1C7E /* LaunchScreen.storyboard */,
+				638E9128246A0D33009A1C7E /* Info.plist */,
+				638E9148246A12D7009A1C7E /* TestViewController.swift */,
+			);
+			path = UpxPagosDemo;
+			sourceTree = "<group>";
+		};
+		638E9130246A0E79009A1C7E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				638E9131246A0EC4009A1C7E /* InicioPresenter.swift */,
+				638E9132246A0EC4009A1C7E /* InicioRouter.swift */,
+				638E9133246A0EC4009A1C7E /* InicioViewController.swift */,
+				638E9134246A0EC4009A1C7E /* InicioProtocols.swift */,
+				638E9135246A0EC4009A1C7E /* InicioInteractor.swift */,
+				638E9136246A0EC4009A1C7E /* InicioViewController.xib */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		638E913D246A0F1E009A1C7E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				638E913E246A0F2F009A1C7E /* UIViewController+navigation.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		638E9142246A1003009A1C7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		638E90F5246A0D02009A1C7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E910B246A0D03009A1C7E /* UpxPagos.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		638E90F9246A0D02009A1C7E /* UpxPagos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638E910E246A0D03009A1C7E /* Build configuration list for PBXNativeTarget "UpxPagos" */;
+			buildPhases = (
+				638E90F5246A0D02009A1C7E /* Headers */,
+				638E90F6246A0D02009A1C7E /* Sources */,
+				638E90F7246A0D02009A1C7E /* Frameworks */,
+				638E90F8246A0D02009A1C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UpxPagos;
+			productName = UpxPagos;
+			productReference = 638E90FA246A0D02009A1C7E /* UpxPagos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		638E9102246A0D03009A1C7E /* UpxPagosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638E9111246A0D03009A1C7E /* Build configuration list for PBXNativeTarget "UpxPagosTests" */;
+			buildPhases = (
+				638E90FF246A0D03009A1C7E /* Sources */,
+				638E9100246A0D03009A1C7E /* Frameworks */,
+				638E9101246A0D03009A1C7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				638E9106246A0D03009A1C7E /* PBXTargetDependency */,
+			);
+			name = UpxPagosTests;
+			productName = UpxPagosTests;
+			productReference = 638E9103246A0D03009A1C7E /* UpxPagosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		638E9117246A0D31009A1C7E /* UpxPagosDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638E9129246A0D33009A1C7E /* Build configuration list for PBXNativeTarget "UpxPagosDemo" */;
+			buildPhases = (
+				638E9114246A0D31009A1C7E /* Sources */,
+				638E9115246A0D31009A1C7E /* Frameworks */,
+				638E9116246A0D31009A1C7E /* Resources */,
+				638E9147246A1003009A1C7E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				638E9146246A1003009A1C7E /* PBXTargetDependency */,
+			);
+			name = UpxPagosDemo;
+			productName = UpxPagosDemo;
+			productReference = 638E9118246A0D31009A1C7E /* UpxPagosDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		638E90F1246A0D02009A1C7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Upax;
+				TargetAttributes = {
+					638E90F9246A0D02009A1C7E = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					638E9102246A0D03009A1C7E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					638E9117246A0D31009A1C7E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 638E90F4246A0D02009A1C7E /* Build configuration list for PBXProject "UpxPagos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 638E90F0246A0D02009A1C7E;
+			productRefGroup = 638E90FB246A0D02009A1C7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638E90F9246A0D02009A1C7E /* UpxPagos */,
+				638E9102246A0D03009A1C7E /* UpxPagosTests */,
+				638E9117246A0D31009A1C7E /* UpxPagosDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		638E90F8246A0D02009A1C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E913C246A0EC4009A1C7E /* InicioViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638E9101246A0D03009A1C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638E9116246A0D31009A1C7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E9127246A0D33009A1C7E /* LaunchScreen.storyboard in Resources */,
+				638E9124246A0D33009A1C7E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		638E90F6246A0D02009A1C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E913F246A0F2F009A1C7E /* UIViewController+navigation.swift in Sources */,
+				638E912F246A0E2E009A1C7E /* UpxPagos.swift in Sources */,
+				638E9137246A0EC4009A1C7E /* InicioPresenter.swift in Sources */,
+				638E9141246A0F65009A1C7E /* SDKConfiguration.swift in Sources */,
+				638E913A246A0EC4009A1C7E /* InicioProtocols.swift in Sources */,
+				638E9138246A0EC4009A1C7E /* InicioRouter.swift in Sources */,
+				638E9139246A0EC4009A1C7E /* InicioViewController.swift in Sources */,
+				638E913B246A0EC4009A1C7E /* InicioInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638E90FF246A0D03009A1C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E9109246A0D03009A1C7E /* UpxPagosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		638E9114246A0D31009A1C7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				638E9149246A12D7009A1C7E /* TestViewController.swift in Sources */,
+				638E911B246A0D31009A1C7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		638E9106246A0D03009A1C7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638E90F9246A0D02009A1C7E /* UpxPagos */;
+			targetProxy = 638E9105246A0D03009A1C7E /* PBXContainerItemProxy */;
+		};
+		638E9146246A1003009A1C7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 638E90F9246A0D02009A1C7E /* UpxPagos */;
+			targetProxy = 638E9145246A1003009A1C7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		638E9125246A0D33009A1C7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				638E9126246A0D33009A1C7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		638E910C246A0D03009A1C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		638E910D246A0D03009A1C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		638E910F246A0D03009A1C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7RGLM8MUMZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UpxPagos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upx.pagos.UpxPagos;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		638E9110246A0D03009A1C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7RGLM8MUMZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UpxPagos/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upx.pagos.UpxPagos;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		638E9112246A0D03009A1C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RGLM8MUMZ;
+				INFOPLIST_FILE = UpxPagosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upx.pagos.UpxPagosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		638E9113246A0D03009A1C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RGLM8MUMZ;
+				INFOPLIST_FILE = UpxPagosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upx.pagos.UpxPagosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		638E912A246A0D33009A1C7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RGLM8MUMZ;
+				INFOPLIST_FILE = UpxPagosDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upx.pagos.UpxPagosDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		638E912B246A0D33009A1C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RGLM8MUMZ;
+				INFOPLIST_FILE = UpxPagosDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.upx.pagos.UpxPagosDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		638E90F4246A0D02009A1C7E /* Build configuration list for PBXProject "UpxPagos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638E910C246A0D03009A1C7E /* Debug */,
+				638E910D246A0D03009A1C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638E910E246A0D03009A1C7E /* Build configuration list for PBXNativeTarget "UpxPagos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638E910F246A0D03009A1C7E /* Debug */,
+				638E9110246A0D03009A1C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638E9111246A0D03009A1C7E /* Build configuration list for PBXNativeTarget "UpxPagosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638E9112246A0D03009A1C7E /* Debug */,
+				638E9113246A0D03009A1C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		638E9129246A0D33009A1C7E /* Build configuration list for PBXNativeTarget "UpxPagosDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638E912A246A0D33009A1C7E /* Debug */,
+				638E912B246A0D33009A1C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 638E90F1246A0D02009A1C7E /* Project object */;
+}
