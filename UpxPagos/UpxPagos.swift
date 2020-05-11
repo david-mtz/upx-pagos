@@ -34,8 +34,8 @@ public class UpxPagos {
             navigationVC = UINavigationController(rootViewController: intialModule)
         }
         
-        guard let firstVC = navigationVC?.viewControllers.first else {
-            print("Error al presentar el modulo")
+        guard navigationVC?.viewControllers.first != nil else {
+            print("Error al presentar el modulo de pagos")
             return
         }
         
