@@ -1,0 +1,11 @@
+framework module UpxPagos {
+  umbrella header "UpxPagos.h"
+
+  export *
+  module * { export * }
+}
+
+module UpxPagos.Swift {
+    header "UpxPagos-Swift.h"
+    requires objc
+}
