@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "UpxPagos"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "UpxPAgos"
 
   # This description is used to generate tags and improve search results.
@@ -81,9 +81,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/david-mtz/upx-pagos.git", :tag => "0.0.2" }
-
-
+  #spec.source       = { :git => "https://github.com/david-mtz/upx-pagos.git", :tag => "0.0.3" }
+	spec.source 	 = { :http => 'https://www.dropbox.com/s/se7wkcxj0693yuo/UpxPagos.framework.zip?dl=0' }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -91,9 +90,13 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+	spec.public_header_files = "UpxPagos.framework/Headers/*.h"
+    spec.source_files = "UpxPagos.framework/Headers/*.h"
+  	#spec.resources  =  "UpxPagos.framework/*.{xib,.xcassets}"
+    spec.vendored_frameworks = "UpxPagos.framework"
 
-  spec.source_files  = "UpxPagos/**/*.{h,m,swift}"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.source_files  = "UpxPagos/**/*.{h,m,swift}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -106,7 +109,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-   spec.resources  =  "UpxPagos/**/*.{xib,.xcassets}"
+  # spec.resources  =  "UpxPagos/**/*.{xib,.xcassets}"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
