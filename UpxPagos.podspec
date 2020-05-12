@@ -106,7 +106,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
+   spec.resources  =  "UpxPagos/**/*.{xib,.xcassets}"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
